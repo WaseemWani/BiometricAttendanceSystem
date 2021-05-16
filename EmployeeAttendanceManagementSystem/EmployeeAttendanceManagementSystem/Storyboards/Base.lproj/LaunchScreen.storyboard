@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fingerPrintIcon" translatesAutoresizingMaskIntoConstraints="NO" id="TTV-rC-IQ4">
+                                <rect key="frame" x="143" y="384" width="128" height="128"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMPLOYEE ATTENDENCE MANAGEMENT SYSTEM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09Q-ST-Nn6">
+                                <rect key="frame" x="25" y="540.5" width="364" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.69803921570000005" green="0.35294117650000001" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="09Q-ST-Nn6" firstAttribute="top" secondItem="TTV-rC-IQ4" secondAttribute="bottom" constant="28.5" id="DN9-cc-40s"/>
+                            <constraint firstItem="09Q-ST-Nn6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HU4-Ev-Ppv"/>
+                            <constraint firstItem="09Q-ST-Nn6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="aya-Aw-cUb"/>
+                            <constraint firstItem="TTV-rC-IQ4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="chP-pu-WvY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="09Q-ST-Nn6" secondAttribute="trailing" constant="25" id="htb-Le-Gvn"/>
+                            <constraint firstItem="TTV-rC-IQ4" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="oun-gP-pi5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375.36231884057975" y="306.69642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fingerPrintIcon" width="128" height="128"/>
+    </resources>
+</document>

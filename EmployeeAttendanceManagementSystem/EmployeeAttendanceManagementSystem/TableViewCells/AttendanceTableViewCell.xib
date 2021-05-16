@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="AttendanceTableViewCell" id="KGk-i7-Jjw" customClass="AttendanceTableViewCell" customModule="EmployeeAttendanceManagementSystem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 May 2021" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2g-zJ-oLV">
+                        <rect key="frame" x="123.5" y="10" width="86.5" height="17.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check in" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpN-gc-wIS">
+                        <rect key="frame" x="15" y="29.5" width="59.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="9:10:01 AM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Che-Dz-qCg">
+                        <rect key="frame" x="15" y="49.5" width="63" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPB-np-8u2">
+                        <rect key="frame" x="248" y="29.5" width="70" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="3:21:12 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOM-X6-0vo">
+                        <rect key="frame" x="256" y="49.5" width="62" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="h2g-zJ-oLV" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="04Z-bR-m6M"/>
+                    <constraint firstItem="WOM-X6-0vo" firstAttribute="top" secondItem="QPB-np-8u2" secondAttribute="bottom" constant="5" id="0Qe-fU-wsQ"/>
+                    <constraint firstItem="Che-Dz-qCg" firstAttribute="leading" secondItem="cpN-gc-wIS" secondAttribute="leading" id="24y-Yr-KHG"/>
+                    <constraint firstItem="WOM-X6-0vo" firstAttribute="trailing" secondItem="QPB-np-8u2" secondAttribute="trailing" id="ECd-kk-REn"/>
+                    <constraint firstItem="cpN-gc-wIS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="LXm-jY-EW7"/>
+                    <constraint firstItem="Che-Dz-qCg" firstAttribute="top" secondItem="cpN-gc-wIS" secondAttribute="bottom" constant="5" id="P8Q-r3-2VX"/>
+                    <constraint firstItem="QPB-np-8u2" firstAttribute="top" secondItem="cpN-gc-wIS" secondAttribute="top" id="aAU-wd-gdg"/>
+                    <constraint firstAttribute="bottom" secondItem="WOM-X6-0vo" secondAttribute="bottom" constant="10" id="dAq-eg-Yd7"/>
+                    <constraint firstItem="cpN-gc-wIS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="egv-zU-do2"/>
+                    <constraint firstAttribute="trailing" secondItem="QPB-np-8u2" secondAttribute="trailing" constant="15" id="i4Q-fF-B1n"/>
+                    <constraint firstItem="QPB-np-8u2" firstAttribute="top" secondItem="h2g-zJ-oLV" secondAttribute="bottom" constant="2" id="iNb-Ff-NQE"/>
+                    <constraint firstItem="QPB-np-8u2" firstAttribute="bottom" secondItem="cpN-gc-wIS" secondAttribute="bottom" id="rn1-V5-Elr"/>
+                    <constraint firstAttribute="bottom" secondItem="Che-Dz-qCg" secondAttribute="bottom" constant="10" id="uQ7-zz-086"/>
+                    <constraint firstItem="h2g-zJ-oLV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vbM-KA-SDw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="checkInTimeLabel" destination="Che-Dz-qCg" id="Y1t-bD-QA7"/>
+                <outlet property="checkOutTimeLabel" destination="WOM-X6-0vo" id="K9W-Iq-RdT"/>
+                <outlet property="checkinLabel" destination="cpN-gc-wIS" id="4Sf-C7-KTG"/>
+                <outlet property="checkoutLabel" destination="QPB-np-8u2" id="Ngk-6u-CBD"/>
+                <outlet property="dateLabel" destination="h2g-zJ-oLV" id="Xhz-V0-iCr"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="6.0267857142857144"/>
+        </tableViewCell>
+    </objects>
+</document>

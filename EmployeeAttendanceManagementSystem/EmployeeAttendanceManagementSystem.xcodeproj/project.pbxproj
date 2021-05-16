@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D145C1D2647C2C400B930ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D145C1C2647C2C400B930ED /* ProfileViewController.swift */; };
+		8D145C212647FFC300B930ED /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D145C202647FFC300B930ED /* DateExtension.swift */; };
+		8D25109726493C1500DEBD5D /* AttendanceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25109626493C1500DEBD5D /* AttendanceListViewController.swift */; };
+		8D25109B26493C6900DEBD5D /* AttendanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25109926493C6900DEBD5D /* AttendanceTableViewCell.swift */; };
+		8D25109C26493C6900DEBD5D /* AttendanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25109A26493C6900DEBD5D /* AttendanceTableViewCell.xib */; };
+		8D36A0AE262AE9CD006E8486 /* SetupPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36A0AD262AE9CD006E8486 /* SetupPasswordViewController.swift */; };
+		8D36A0B2262C065C006E8486 /* SetRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36A0B1262C065C006E8486 /* SetRoleViewController.swift */; };
+		8DDDD0DA2631E01E00013FEA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0D92631E01E00013FEA /* LoginViewController.swift */; };
+		8DDDD0DE2633E1DB00013FEA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0DD2633E1DB00013FEA /* HomeViewController.swift */; };
+		8DDDD0E2263407AC00013FEA /* LocationViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0E1263407AC00013FEA /* LocationViewViewController.swift */; };
+		8DDDD0EA2635D52200013FEA /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0E92635D52100013FEA /* DatabaseManager.swift */; };
+		8DDDD0EF2636AA2D00013FEA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0EE2636AA2D00013FEA /* StringExtension.swift */; };
+		8DDDD0F22636AAED00013FEA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0F12636AAED00013FEA /* UIViewExtension.swift */; };
+		8DDDD0F52636AB5400013FEA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0F42636AB5400013FEA /* AppConstants.swift */; };
+		8DDDD0FB2636CB8300013FEA /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0FA2636CB8300013FEA /* UIViewControllerExtension.swift */; };
+		8DDDD0FE2636D4F300013FEA /* UserSignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0FD2636D4F300013FEA /* UserSignUpModel.swift */; };
+		8DEC19E5262ABBCD0043B155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC19E4262ABBCD0043B155 /* AppDelegate.swift */; };
+		8DEC19E7262ABBCD0043B155 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC19E6262ABBCD0043B155 /* SceneDelegate.swift */; };
+		8DEC19E9262ABBCD0043B155 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC19E8262ABBCD0043B155 /* SignUpViewController.swift */; };
+		8DEC19EC262ABBCD0043B155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEC19EA262ABBCD0043B155 /* Main.storyboard */; };
+		8DEC19EF262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC19ED262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodeld */; };
+		8DEC19F1262ABBCF0043B155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEC19F0262ABBCF0043B155 /* Assets.xcassets */; };
+		8DEC19F4262ABBCF0043B155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEC19F2262ABBCF0043B155 /* LaunchScreen.storyboard */; };
+		8DF9B30E264E3BDC00107D00 /* CLLocationCoordinate2DExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9B30D264E3BDC00107D00 /* CLLocationCoordinate2DExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8D145C1C2647C2C400B930ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8D145C202647FFC300B930ED /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		8D25109626493C1500DEBD5D /* AttendanceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceListViewController.swift; sourceTree = "<group>"; };
+		8D25109926493C6900DEBD5D /* AttendanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceTableViewCell.swift; sourceTree = "<group>"; };
+		8D25109A26493C6900DEBD5D /* AttendanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttendanceTableViewCell.xib; sourceTree = "<group>"; };
+		8D36A0AD262AE9CD006E8486 /* SetupPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPasswordViewController.swift; sourceTree = "<group>"; };
+		8D36A0B1262C065C006E8486 /* SetRoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetRoleViewController.swift; sourceTree = "<group>"; };
+		8DDDD0D92631E01E00013FEA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8DDDD0DD2633E1DB00013FEA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8DDDD0E1263407AC00013FEA /* LocationViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewViewController.swift; sourceTree = "<group>"; };
+		8DDDD0E92635D52100013FEA /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		8DDDD0EE2636AA2D00013FEA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		8DDDD0F12636AAED00013FEA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		8DDDD0F42636AB5400013FEA /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		8DDDD0FA2636CB8300013FEA /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		8DDDD0FD2636D4F300013FEA /* UserSignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpModel.swift; sourceTree = "<group>"; };
+		8DEC19E1262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeAttendanceManagementSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DEC19E4262ABBCD0043B155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DEC19E6262ABBCD0043B155 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8DEC19E8262ABBCD0043B155 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8DEC19EB262ABBCD0043B155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DEC19EE262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmployeeAttendanceManagementSystem.xcdatamodel; sourceTree = "<group>"; };
+		8DEC19F0262ABBCF0043B155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DEC19F3262ABBCF0043B155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DEC19F5262ABBCF0043B155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DF9B30D264E3BDC00107D00 /* CLLocationCoordinate2DExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2DExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DEC19DE262ABBCD0043B155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DDDD0F72636B1CA00013FEA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8DDDD0EE2636AA2D00013FEA /* StringExtension.swift */,
+				8DDDD0F12636AAED00013FEA /* UIViewExtension.swift */,
+				8DDDD0FA2636CB8300013FEA /* UIViewControllerExtension.swift */,
+				8D145C202647FFC300B930ED /* DateExtension.swift */,
+				8DF9B30D264E3BDC00107D00 /* CLLocationCoordinate2DExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8DDDD0F82636BD5B00013FEA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8DDDD0F42636AB5400013FEA /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8DDDD1012636D64C00013FEA /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				8DDDD0FD2636D4F300013FEA /* UserSignUpModel.swift */,
+			);
+			path = UserData;
+			sourceTree = "<group>";
+		};
+		8DEC19D8262ABBCD0043B155 = {
+			isa = PBXGroup;
+			children = (
+				8DEC19E3262ABBCD0043B155 /* EmployeeAttendanceManagementSystem */,
+				8DEC19E2262ABBCD0043B155 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DEC19E2262ABBCD0043B155 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DEC19E1262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DEC19E3262ABBCD0043B155 /* EmployeeAttendanceManagementSystem */ = {
+			isa = PBXGroup;
+			children = (
+				8DEC19E4262ABBCD0043B155 /* AppDelegate.swift */,
+				8DEC19E6262ABBCD0043B155 /* SceneDelegate.swift */,
+				8DF9B314265145FC00107D00 /* ViewControllers */,
+				8DF9B3152651463600107D00 /* TableViewCells */,
+				8DF9B3172651466400107D00 /* Storyboards */,
+				8DF9B3162651464600107D00 /* DatabaseManager */,
+				8DDDD1012636D64C00013FEA /* UserData */,
+				8DDDD0F82636BD5B00013FEA /* Constants */,
+				8DDDD0F72636B1CA00013FEA /* Extensions */,
+				8DEC19F0262ABBCF0043B155 /* Assets.xcassets */,
+				8DEC19F5262ABBCF0043B155 /* Info.plist */,
+				8DEC19ED262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodeld */,
+			);
+			path = EmployeeAttendanceManagementSystem;
+			sourceTree = "<group>";
+		};
+		8DF9B314265145FC00107D00 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DEC19E8262ABBCD0043B155 /* SignUpViewController.swift */,
+				8D36A0AD262AE9CD006E8486 /* SetupPasswordViewController.swift */,
+				8D36A0B1262C065C006E8486 /* SetRoleViewController.swift */,
+				8DDDD0D92631E01E00013FEA /* LoginViewController.swift */,
+				8DDDD0DD2633E1DB00013FEA /* HomeViewController.swift */,
+				8DDDD0E1263407AC00013FEA /* LocationViewViewController.swift */,
+				8D145C1C2647C2C400B930ED /* ProfileViewController.swift */,
+				8D25109626493C1500DEBD5D /* AttendanceListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8DF9B3152651463600107D00 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8D25109926493C6900DEBD5D /* AttendanceTableViewCell.swift */,
+				8D25109A26493C6900DEBD5D /* AttendanceTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		8DF9B3162651464600107D00 /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				8DDDD0E92635D52100013FEA /* DatabaseManager.swift */,
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		8DF9B3172651466400107D00 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8DEC19EA262ABBCD0043B155 /* Main.storyboard */,
+				8DEC19F2262ABBCF0043B155 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DEC19E0262ABBCD0043B155 /* EmployeeAttendanceManagementSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DEC19F8262ABBCF0043B155 /* Build configuration list for PBXNativeTarget "EmployeeAttendanceManagementSystem" */;
+			buildPhases = (
+				8DEC19DD262ABBCD0043B155 /* Sources */,
+				8DEC19DE262ABBCD0043B155 /* Frameworks */,
+				8DEC19DF262ABBCD0043B155 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmployeeAttendanceManagementSystem;
+			productName = EmployeeAttendanceManagementSystem;
+			productReference = 8DEC19E1262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DEC19D9262ABBCD0043B155 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					8DEC19E0262ABBCD0043B155 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 8DEC19DC262ABBCD0043B155 /* Build configuration list for PBXProject "EmployeeAttendanceManagementSystem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DEC19D8262ABBCD0043B155;
+			productRefGroup = 8DEC19E2262ABBCD0043B155 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DEC19E0262ABBCD0043B155 /* EmployeeAttendanceManagementSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DEC19DF262ABBCD0043B155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DEC19F4262ABBCF0043B155 /* LaunchScreen.storyboard in Resources */,
+				8DEC19F1262ABBCF0043B155 /* Assets.xcassets in Resources */,
+				8D25109C26493C6900DEBD5D /* AttendanceTableViewCell.xib in Resources */,
+				8DEC19EC262ABBCD0043B155 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DEC19DD262ABBCD0043B155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DDDD0DA2631E01E00013FEA /* LoginViewController.swift in Sources */,
+				8D145C212647FFC300B930ED /* DateExtension.swift in Sources */,
+				8DEC19EF262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodeld in Sources */,
+				8DDDD0EA2635D52200013FEA /* DatabaseManager.swift in Sources */,
+				8D36A0B2262C065C006E8486 /* SetRoleViewController.swift in Sources */,
+				8DDDD0DE2633E1DB00013FEA /* HomeViewController.swift in Sources */,
+				8DEC19E9262ABBCD0043B155 /* SignUpViewController.swift in Sources */,
+				8D145C1D2647C2C400B930ED /* ProfileViewController.swift in Sources */,
+				8DDDD0FE2636D4F300013FEA /* UserSignUpModel.swift in Sources */,
+				8DDDD0F22636AAED00013FEA /* UIViewExtension.swift in Sources */,
+				8DEC19E5262ABBCD0043B155 /* AppDelegate.swift in Sources */,
+				8DF9B30E264E3BDC00107D00 /* CLLocationCoordinate2DExtension.swift in Sources */,
+				8D25109726493C1500DEBD5D /* AttendanceListViewController.swift in Sources */,
+				8D25109B26493C6900DEBD5D /* AttendanceTableViewCell.swift in Sources */,
+				8DDDD0E2263407AC00013FEA /* LocationViewViewController.swift in Sources */,
+				8D36A0AE262AE9CD006E8486 /* SetupPasswordViewController.swift in Sources */,
+				8DDDD0F52636AB5400013FEA /* AppConstants.swift in Sources */,
+				8DDDD0EF2636AA2D00013FEA /* StringExtension.swift in Sources */,
+				8DDDD0FB2636CB8300013FEA /* UIViewControllerExtension.swift in Sources */,
+				8DEC19E7262ABBCD0043B155 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8DEC19EA262ABBCD0043B155 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DEC19EB262ABBCD0043B155 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8DEC19F2262ABBCF0043B155 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DEC19F3262ABBCF0043B155 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DEC19F6262ABBCF0043B155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8DEC19F7262ABBCF0043B155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DEC19F9262ABBCF0043B155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33AWVQZ62V;
+				INFOPLIST_FILE = EmployeeAttendanceManagementSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TairahAndrabi.EmployeeAttendanceManagementSystem.waseemwani;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DEC19FA262ABBCF0043B155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33AWVQZ62V;
+				INFOPLIST_FILE = EmployeeAttendanceManagementSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TairahAndrabi.EmployeeAttendanceManagementSystem.waseemwani;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DEC19DC262ABBCD0043B155 /* Build configuration list for PBXProject "EmployeeAttendanceManagementSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DEC19F6262ABBCF0043B155 /* Debug */,
+				8DEC19F7262ABBCF0043B155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DEC19F8262ABBCF0043B155 /* Build configuration list for PBXNativeTarget "EmployeeAttendanceManagementSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DEC19F9262ABBCF0043B155 /* Debug */,
+				8DEC19FA262ABBCF0043B155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8DEC19ED262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8DEC19EE262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodel */,
+			);
+			currentVersion = 8DEC19EE262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodel */;
+			path = EmployeeAttendanceManagementSystem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8DEC19D9262ABBCD0043B155 /* Project object */;
+}
