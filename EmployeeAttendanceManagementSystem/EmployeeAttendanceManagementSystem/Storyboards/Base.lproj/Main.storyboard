@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850.72463768115949" y="-100.44642857142857"/>
+            <point key="canvasLocation" x="522" y="-113"/>
         </scene>
         <!--Setup Password View Controller-->
         <scene sceneID="dGK-KS-zda">
@@ -298,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Vn-sc-yEF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1691" y="-100"/>
+            <point key="canvasLocation" x="1393" y="-113"/>
         </scene>
         <!--Set Role View Controller-->
         <scene sceneID="jZH-5n-cOK">
@@ -352,7 +352,7 @@
                                     <constraint firstAttribute="height" constant="45" id="pne-9c-S8H"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up as" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovw-1Z-xUh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up as" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovw-1Z-xUh">
                                 <rect key="frame" x="20" y="425.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -399,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wtr-yK-IzH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2599" y="-100"/>
+            <point key="canvasLocation" x="2352" y="-113"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="bga-uR-zcx">
@@ -523,7 +523,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D34-Xy-7PV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3428.985507246377" y="-100.44642857142857"/>
+            <point key="canvasLocation" x="3342" y="-113"/>
         </scene>
         <!--Location View View Controller-->
         <scene sceneID="2qB-MR-sNN">
@@ -578,7 +578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8t-ta-bMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5141" y="-100"/>
+            <point key="canvasLocation" x="1559" y="716"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="QAh-ho-BqI">
@@ -714,7 +714,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gV-30-Hr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6688.4057971014499" y="-87.053571428571431"/>
+            <point key="canvasLocation" x="2455" y="716"/>
         </scene>
         <!--Attendance List View Controller-->
         <scene sceneID="dHY-9p-Xnw">
@@ -726,7 +726,6 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z2q-6Z-CR2">
                                 <rect key="frame" x="10" y="54" width="394" height="808"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -745,7 +744,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8UW-tM-s9M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7522" y="-77"/>
+            <point key="canvasLocation" x="3341" y="716"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Qrx-jo-API">
@@ -958,8 +957,10 @@
                             <constraint firstItem="1bM-A5-mOS" firstAttribute="bottom" secondItem="Gaf-gh-u2b" secondAttribute="bottom" constant="20" id="Uzw-mE-idO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="p0D-9r-tXt"/>
                     <connections>
                         <outlet property="attendanceView" destination="L6V-nq-1Yw" id="nQY-jg-idn"/>
+                        <outlet property="checkInButton" destination="MsP-oo-I9Z" id="q8u-jl-hkF"/>
                         <outlet property="checkInLabel" destination="2Y8-O8-QVd" id="b9D-ZH-uqU"/>
                         <outlet property="checkInView" destination="Zeb-Sw-x3r" id="bVh-eT-g6z"/>
                         <outlet property="checkinImageView" destination="N9f-8b-eYq" id="Xgf-14-EhT"/>
@@ -976,7 +977,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTU-Iv-dRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4291" y="-94"/>
+            <point key="canvasLocation" x="658" y="716"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B1L-ts-Doc">
@@ -1000,7 +1001,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAd-Wx-ahe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-92.523364485981304" y="89.416846652267822"/>
+            <point key="canvasLocation" x="-381" y="208"/>
         </scene>
     </scenes>
     <resources>

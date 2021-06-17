@@ -47,7 +47,6 @@ class LocationViewViewController: UIViewController {
             mapView.setRegion(AppConstants.region, animated: true)
             let annotation = MKPointAnnotation()
             annotation.coordinate = AppConstants.currentLocation
-            print(annotation.coordinate.latitude)
             mapView.showsUserLocation = true
             mapView.addAnnotation(annotation)
             self.annotation = annotation

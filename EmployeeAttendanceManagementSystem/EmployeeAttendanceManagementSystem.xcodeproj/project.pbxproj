@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0AEA10265806EA0079D67D /* RegisteredUsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AEA0F265806EA0079D67D /* RegisteredUsersModel.swift */; };
 		8D145C1D2647C2C400B930ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D145C1C2647C2C400B930ED /* ProfileViewController.swift */; };
 		8D145C212647FFC300B930ED /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D145C202647FFC300B930ED /* DateExtension.swift */; };
+		8D1E0656266E249D0006618A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E0654266E249D0006618A /* CollectionViewCell.swift */; };
+		8D1E0657266E249D0006618A /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1E0655266E249D0006618A /* CollectionViewCell.xib */; };
 		8D25109726493C1500DEBD5D /* AttendanceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25109626493C1500DEBD5D /* AttendanceListViewController.swift */; };
 		8D25109B26493C6900DEBD5D /* AttendanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25109926493C6900DEBD5D /* AttendanceTableViewCell.swift */; };
 		8D25109C26493C6900DEBD5D /* AttendanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25109A26493C6900DEBD5D /* AttendanceTableViewCell.xib */; };
@@ -22,20 +25,23 @@
 		8DDDD0F22636AAED00013FEA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0F12636AAED00013FEA /* UIViewExtension.swift */; };
 		8DDDD0F52636AB5400013FEA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0F42636AB5400013FEA /* AppConstants.swift */; };
 		8DDDD0FB2636CB8300013FEA /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0FA2636CB8300013FEA /* UIViewControllerExtension.swift */; };
-		8DDDD0FE2636D4F300013FEA /* UserSignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0FD2636D4F300013FEA /* UserSignUpModel.swift */; };
+		8DDDD0FE2636D4F300013FEA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDDD0FD2636D4F300013FEA /* UserModel.swift */; };
 		8DEC19E5262ABBCD0043B155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC19E4262ABBCD0043B155 /* AppDelegate.swift */; };
 		8DEC19E7262ABBCD0043B155 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC19E6262ABBCD0043B155 /* SceneDelegate.swift */; };
-		8DEC19E9262ABBCD0043B155 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC19E8262ABBCD0043B155 /* SignUpViewController.swift */; };
 		8DEC19EC262ABBCD0043B155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEC19EA262ABBCD0043B155 /* Main.storyboard */; };
 		8DEC19EF262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC19ED262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodeld */; };
 		8DEC19F1262ABBCF0043B155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEC19F0262ABBCF0043B155 /* Assets.xcassets */; };
 		8DEC19F4262ABBCF0043B155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEC19F2262ABBCF0043B155 /* LaunchScreen.storyboard */; };
 		8DF9B30E264E3BDC00107D00 /* CLLocationCoordinate2DExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9B30D264E3BDC00107D00 /* CLLocationCoordinate2DExtension.swift */; };
+		8DF9B31C2653EBAE00107D00 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC19E8262ABBCD0043B155 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D0AEA0F265806EA0079D67D /* RegisteredUsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisteredUsersModel.swift; sourceTree = "<group>"; };
 		8D145C1C2647C2C400B930ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8D145C202647FFC300B930ED /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		8D1E0654266E249D0006618A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		8D1E0655266E249D0006618A /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		8D25109626493C1500DEBD5D /* AttendanceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceListViewController.swift; sourceTree = "<group>"; };
 		8D25109926493C6900DEBD5D /* AttendanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceTableViewCell.swift; sourceTree = "<group>"; };
 		8D25109A26493C6900DEBD5D /* AttendanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttendanceTableViewCell.xib; sourceTree = "<group>"; };
@@ -49,7 +55,7 @@
 		8DDDD0F12636AAED00013FEA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		8DDDD0F42636AB5400013FEA /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		8DDDD0FA2636CB8300013FEA /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		8DDDD0FD2636D4F300013FEA /* UserSignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpModel.swift; sourceTree = "<group>"; };
+		8DDDD0FD2636D4F300013FEA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8DEC19E1262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeAttendanceManagementSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEC19E4262ABBCD0043B155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEC19E6262ABBCD0043B155 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D0AEA14265B74850079D67D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DDDD1012636D64C00013FEA /* UserModel */,
+				8DEC19ED262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8DDDD0F72636B1CA00013FEA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,12 +108,13 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		8DDDD1012636D64C00013FEA /* UserData */ = {
+		8DDDD1012636D64C00013FEA /* UserModel */ = {
 			isa = PBXGroup;
 			children = (
-				8DDDD0FD2636D4F300013FEA /* UserSignUpModel.swift */,
+				8DDDD0FD2636D4F300013FEA /* UserModel.swift */,
+				8D0AEA0F265806EA0079D67D /* RegisteredUsersModel.swift */,
 			);
-			path = UserData;
+			path = UserModel;
 			sourceTree = "<group>";
 		};
 		8DEC19D8262ABBCD0043B155 = {
@@ -122,16 +138,15 @@
 			children = (
 				8DEC19E4262ABBCD0043B155 /* AppDelegate.swift */,
 				8DEC19E6262ABBCD0043B155 /* SceneDelegate.swift */,
+				8D0AEA14265B74850079D67D /* Models */,
 				8DF9B314265145FC00107D00 /* ViewControllers */,
 				8DF9B3152651463600107D00 /* TableViewCells */,
 				8DF9B3172651466400107D00 /* Storyboards */,
 				8DF9B3162651464600107D00 /* DatabaseManager */,
-				8DDDD1012636D64C00013FEA /* UserData */,
 				8DDDD0F82636BD5B00013FEA /* Constants */,
 				8DDDD0F72636B1CA00013FEA /* Extensions */,
 				8DEC19F0262ABBCF0043B155 /* Assets.xcassets */,
 				8DEC19F5262ABBCF0043B155 /* Info.plist */,
-				8DEC19ED262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodeld */,
 			);
 			path = EmployeeAttendanceManagementSystem;
 			sourceTree = "<group>";
@@ -156,6 +171,8 @@
 			children = (
 				8D25109926493C6900DEBD5D /* AttendanceTableViewCell.swift */,
 				8D25109A26493C6900DEBD5D /* AttendanceTableViewCell.xib */,
+				8D1E0654266E249D0006618A /* CollectionViewCell.swift */,
+				8D1E0655266E249D0006618A /* CollectionViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -238,6 +255,7 @@
 				8DEC19F1262ABBCF0043B155 /* Assets.xcassets in Resources */,
 				8D25109C26493C6900DEBD5D /* AttendanceTableViewCell.xib in Resources */,
 				8DEC19EC262ABBCD0043B155 /* Main.storyboard in Resources */,
+				8D1E0657266E249D0006618A /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,17 +270,19 @@
 				8D145C212647FFC300B930ED /* DateExtension.swift in Sources */,
 				8DEC19EF262ABBCD0043B155 /* EmployeeAttendanceManagementSystem.xcdatamodeld in Sources */,
 				8DDDD0EA2635D52200013FEA /* DatabaseManager.swift in Sources */,
+				8D0AEA10265806EA0079D67D /* RegisteredUsersModel.swift in Sources */,
 				8D36A0B2262C065C006E8486 /* SetRoleViewController.swift in Sources */,
 				8DDDD0DE2633E1DB00013FEA /* HomeViewController.swift in Sources */,
-				8DEC19E9262ABBCD0043B155 /* SignUpViewController.swift in Sources */,
 				8D145C1D2647C2C400B930ED /* ProfileViewController.swift in Sources */,
-				8DDDD0FE2636D4F300013FEA /* UserSignUpModel.swift in Sources */,
+				8DDDD0FE2636D4F300013FEA /* UserModel.swift in Sources */,
 				8DDDD0F22636AAED00013FEA /* UIViewExtension.swift in Sources */,
+				8D1E0656266E249D0006618A /* CollectionViewCell.swift in Sources */,
 				8DEC19E5262ABBCD0043B155 /* AppDelegate.swift in Sources */,
 				8DF9B30E264E3BDC00107D00 /* CLLocationCoordinate2DExtension.swift in Sources */,
 				8D25109726493C1500DEBD5D /* AttendanceListViewController.swift in Sources */,
 				8D25109B26493C6900DEBD5D /* AttendanceTableViewCell.swift in Sources */,
 				8DDDD0E2263407AC00013FEA /* LocationViewViewController.swift in Sources */,
+				8DF9B31C2653EBAE00107D00 /* SignUpViewController.swift in Sources */,
 				8D36A0AE262AE9CD006E8486 /* SetupPasswordViewController.swift in Sources */,
 				8DDDD0F52636AB5400013FEA /* AppConstants.swift in Sources */,
 				8DDDD0EF2636AA2D00013FEA /* StringExtension.swift in Sources */,

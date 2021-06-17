@@ -13,6 +13,7 @@ enum CoreDataModelType<T> {
     case officeLocation
     case user
     case userById(Int16)
+    case userByRole(String)
     case checkIn
     case checkInByDate(String)
     case checkOut
@@ -25,6 +26,8 @@ enum CoreDataModelType<T> {
                 return "employeeId"
             case .checkInByDate, .checkOutByDate:
                 return "date"
+            case .userByRole:
+                return "role"
             default:
                 return nil
         }
@@ -36,6 +39,8 @@ enum CoreDataModelType<T> {
                 return String(empId)
             case .checkInByDate(let date), .checkOutByDate(let date):
                 return date
+            case .userByRole(let role):
+                return role
             default:
                 return nil
         }
@@ -51,7 +56,7 @@ enum CoreDataModelType<T> {
     }
 }
 
-// this class manages different database operations
+// this class manages/performs different database operations
 class DatabaseManager {
     
     static let sharedInstance = DatabaseManager() //singleton class, shared instance

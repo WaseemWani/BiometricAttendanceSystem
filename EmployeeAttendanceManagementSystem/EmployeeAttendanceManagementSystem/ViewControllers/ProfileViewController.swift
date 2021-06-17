@@ -40,9 +40,9 @@ class ProfileViewController: UIViewController {
     
     private func setupUI() {
         navigationItem.title = "PROFILE"
-        nameLabel.text = User.user.name //UserDefaults.standard.string(forKey: AppConstants.nameKey)
-        emailLabel.text = User.user.email //UserDefaults.standard.string(forKey: AppConstants.emailKey)
-        idLabel.text = User.user.id //UserDefaults.standard.string(forKey: AppConstants.idKey)
-        roleLabel.text = User.user.role //UserDefaults.standard.string(forKey: AppConstants.roleKey)
+        nameLabel.text = User.user.name
+        emailLabel.text = User.user.email
+        idLabel.text = User.user.id
+        roleLabel.text = User.user.role
     }
 }

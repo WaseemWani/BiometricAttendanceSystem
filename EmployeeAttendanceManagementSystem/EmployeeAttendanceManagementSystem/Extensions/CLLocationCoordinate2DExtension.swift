@@ -19,17 +19,13 @@ extension CLLocationCoordinate2D {
     }
 }
 
-extension CLLocation {
-    
-    /// Get distance between two points
-    ///
-    /// - Parameters:
-    ///   - from: first point
-    ///   - to: second point
-    /// - Returns: the distance in meters
-    class func distance(from: CLLocationCoordinate2D, to: CLLocationCoordinate2D) -> CLLocationDistance {
-        let from = CLLocation(latitude: from.latitude, longitude: from.longitude)
-        let to = CLLocation(latitude: to.latitude, longitude: to.longitude)
-        return from.distance(from: to)
-    }
-}
+/* Explaination of the above function
+ point1(currentLocation): CLLocationCoordinate2D, point2(officeLocation --> from Database): CLLocationCoordinate2D
+ 
+ point1(currentLocation).distance(point2)
+ 
+ let point2(officeLocation) = CLLocation(latitude: point2officeLocation).latitude, longitude: point2officeLocation).longitude)
+ let point1(currentLocation) = CLLocation(latitude: point1(currentLocation).latitude, longitude: point1(currentLocation).longitude)
+ 
+  point2.distance(from: point1)
+ */

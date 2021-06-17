@@ -20,6 +20,10 @@ class SetupPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
+    }
+    
+    private func setUpUI() {
         self.title = "SET YOUR PASSWORD"
         setupNextButton()
         addTapGesture()
@@ -66,7 +70,6 @@ class SetupPasswordViewController: UIViewController {
     private func showSetRoleViewController() {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         guard let setRoleViewController = storyboard.instantiateViewController(withIdentifier: "SetRoleViewController") as? SetRoleViewController else { return }
-        User.user.password = confirmPasswordTextField.text!
         navigationController?.pushViewController(setRoleViewController, animated: true)
     }
     

@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet var checkInView: UIView!
     @IBOutlet var checkInLabel: UILabel!
     @IBOutlet var checkinImageView: UIImageView!
+    @IBOutlet var checkInButton: UIButton!
     
     @IBOutlet var locationView: UIView!
     @IBOutlet var locationImageView: UIImageView!
@@ -35,7 +36,17 @@ class HomeViewController: UIViewController {
         getUser(for: id)
         setupUI()
     }
-    
+        
+    private func getUser(for id: String) {
+        let id = Int16(id) ?? 0
+        let user = RegisteredUsers.registeredUsers.filter({$0.employeeId == id})
+              let empId = user.first?.employeeId ?? 0
+              let name = user.first?.name ?? ""
+              let email = user.first?.email ?? ""
+              let role = user.first?.role ?? ""
+        User.user = User(name: name, email: email, id: String(empId), role: role, password: "")
+    }
+
     private func setupUI() {
         addShadowAndRoundCorners()
         setNavigationBar()
@@ -49,11 +60,13 @@ class HomeViewController: UIViewController {
         if User.user.role == AppConstants.adminRoleText {
             checkinImageView.image = nil
             checkInLabel.text = nil
+            checkInButton.isEnabled = false
             locationImageView.image = UIImage(systemName: "mappin.and.ellipse")
             setLocationLabel.text = "Set office location"
         } else {
             checkinImageView.image = UIImage(systemName: "arrow.right.square")
             checkInLabel.text = "Check in       "
+            checkInButton.isEnabled = true
             locationImageView.image = UIImage(systemName: "arrow.left.square")
             setLocationLabel.text = "Check out"
         }
@@ -83,17 +96,6 @@ class HomeViewController: UIViewController {
         guard let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
         UserDefaults.standard.set(false, forKey: AppConstants.loggedInKey)
         navigationController?.setViewControllers([loginViewController], animated: true)
-    }
-    
-    private func getUser(for id: String) {
-        let id = Int16(id) ?? 0
-        guard let user = DatabaseManager.sharedInstance.retrieveData(modelType: CoreDataModelType<UserEntity>.userById(id)),
-              let empId = user.first?.employeeId,
-              let name = user.first?.name,
-              let email = user.first?.email,
-              let role = user.first?.role
-              else { return }
-        User.user = User(name: name, email: email, id: String(empId), role: role, password: "")
     }
     
     @IBAction func checkInButtonAction(_ sender: Any) {
@@ -158,18 +160,9 @@ class HomeViewController: UIViewController {
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
         guard let attendanceListViewController = storyBoard.instantiateViewController(withIdentifier: "AttendanceListViewController") as? AttendanceListViewController else { return }
         navigationController?.pushViewController(attendanceListViewController, animated: true)
-
-        if User.user.role  == AppConstants.adminRoleText {
-//            let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-//            guard let attendanceListViewController = storyBoard.instantiateViewController(withIdentifier: "AttendanceListViewController") as? AttendanceListViewController else { return }
-//            navigationController?.pushViewController(attendanceListViewController, animated: true)
-        } else {
-            print("view attendance button tapped: emp action will go here")
-        }
     }
     
     @IBAction func viewProfileButtonAction(_ sender: Any) {
-        print("view profile screen here")
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         guard let profileViewController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController else  { return }
         navigationController?.pushViewController(profileViewController, animated: true)
@@ -206,26 +199,26 @@ extension HomeViewController {
         var location = CLLocationCoordinate2D()
         location.latitude = officeLocation.first?.latitude ?? 0
         location.longitude = officeLocation.first?.longitude ?? 0
-        print(AppConstants.currentLocation.distance(from: location))
         if AppConstants.currentLocation.distance(from: location) <= 100 {
             return true
         } else {
-            print("you are not in office premises")
             return false
         }
     }
     
     var hasAlreadyCheckedIn: Bool {
         if let checkinEntity = DatabaseManager.sharedInstance.retrieveData(modelType: CoreDataModelType<Checkin>.checkInByDate(Date().getLocalizedDate())), checkinEntity.first?.hasCheckedIn != nil {
-            return true
+            let filteredCheckIns = checkinEntity.filter({ $0.employeeId == User.user.id})
+            return (!filteredCheckIns.isEmpty && filteredCheckIns.first?.hasCheckedIn != nil)
         } else {
             return false
         }
     }
 
     var hasAlreadyCheckedOut: Bool {
-        if let checkOutEntity = DatabaseManager.sharedInstance.retrieveData(modelType: CoreDataModelType<Checkout>.checkOutByDate(Date().getLocalizedDate())), !checkOutEntity.isEmpty, checkOutEntity.first?.hasCheckedOut != nil {
-            return true
+        if let checkOutEntity = DatabaseManager.sharedInstance.retrieveData(modelType: CoreDataModelType<Checkout>.checkOutByDate(Date().getLocalizedDate())) {
+            let filteredCheckOuts = checkOutEntity.filter({$0.employeeId == User.user.id})
+            return (!filteredCheckOuts.isEmpty && filteredCheckOuts.first?.hasCheckedOut != nil)
         } else {
             return false
         }
@@ -234,6 +227,7 @@ extension HomeViewController {
     private func checkin(completion: @escaping () -> Void) {
         DatabaseManager.sharedInstance.saveData(modelType: CoreDataModelType<Checkin>.checkIn) { entity in
             entity.hasCheckedIn = true
+            entity.employeeId = User.user.id
             entity.date = Date().getLocalizedDate()
             entity.time = Date().getLocalizedTime()
             completion()
@@ -243,6 +237,7 @@ extension HomeViewController {
     private func checkout(completion: @escaping () -> Void) {
         DatabaseManager.sharedInstance.saveData(modelType: CoreDataModelType<Checkout>.checkOut) { entity in
             entity.hasCheckedOut = true
+            entity.employeeId = User.user.id
             entity.date = Date().getLocalizedDate()
             entity.time = Date().getLocalizedTime()
             completion()

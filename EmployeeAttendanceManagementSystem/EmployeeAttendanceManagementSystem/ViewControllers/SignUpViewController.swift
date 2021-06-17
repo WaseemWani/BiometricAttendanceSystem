@@ -19,6 +19,10 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
+    }
+
+    private func setUpUI() {
         self.title = "SIGN UP"
         signupButton.addShadow()
         nameTextField.delegate = self
@@ -36,12 +40,31 @@ class SignUpViewController: UIViewController {
             errorLabel.textColor = .red
         } else {
             errorLabel.text = nil
-            if AppConstants.UserId.adminId.contains(idTextField.text!) || AppConstants.UserId.employeeId.contains(idTextField.text!){
-                showSetUpPasswordViewController()
+            if AppConstants.UserId.adminId.contains(idTextField.text!) || AppConstants.UserId.employeeId.contains(idTextField.text!) {
+                if hasUserAlreadyRegistered(id: idTextField.text!) {
+                    errorLabel.text = "User with id \(idTextField.text!) already exists."
+                    errorLabel.textColor = .red
+                } else {
+                    errorLabel.text = nil
+                    showSetUpPasswordViewController()
+                }
             } else {
                 showAlert(title: "Error", message: "Details not found!", completionHandler: nil)
             }
         }
+    }
+    
+    private func hasUserAlreadyRegistered(id: String) -> Bool {
+        var hasRegistered: Bool = false
+        for user in RegisteredUsers.registeredUsers {
+            if id == String(user.employeeId) {
+                hasRegistered = true
+                break
+            } else {
+                hasRegistered =  false
+            }
+        }
+        return hasRegistered
     }
         
     private func showSetUpPasswordViewController() {
@@ -88,7 +111,8 @@ extension SignUpViewController: UITextFieldDelegate {
             let currentString: NSString = textField.text! as NSString
             let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
             return newString.length <= maxLength && string.validateId()
+        } else {
+            return true
         }
-        return true
     }
 }

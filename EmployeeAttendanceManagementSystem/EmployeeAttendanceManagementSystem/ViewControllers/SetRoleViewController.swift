@@ -8,8 +8,8 @@
 import UIKit
 
 private enum Segements: Int {
-  case admin
-  case employee
+  case admin = 0
+  case employee = 1
 }
 
 class SetRoleViewController: UIViewController {
@@ -20,6 +20,10 @@ class SetRoleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
+    }
+    
+    private func setUpUI() {
         self.title = "SET YOUR ROLE"
         self.navigationItem.backButtonTitle = " "
         signUpButton.addShadow()
@@ -32,7 +36,7 @@ class SetRoleViewController: UIViewController {
         roleSegmentControl.selectedSegmentIndex = Segements.employee.rawValue
         if AppConstants.UserId.employeeId.contains(User.user.id) {
             errorLabel.text = AppConstants.eligibleToSignUpText
-            errorLabel.textColor = #colorLiteral(red: 0.7573277354, green: 0.4704928994, blue: 0.9946855903, alpha: 1)
+            errorLabel.textColor = AppConstants.theme
             shouldEnableButton(shouldEnable: true)
         } else {
             errorLabel.text = AppConstants.signUpAsAdminErrorText
@@ -45,7 +49,7 @@ class SetRoleViewController: UIViewController {
         if roleSegmentControl.selectedSegmentIndex == Segements.admin.rawValue {
             if AppConstants.UserId.adminId.contains(User.user.id) {
                 errorLabel.text = AppConstants.eligibleToSignUpText
-                errorLabel.textColor = #colorLiteral(red: 0.7573277354, green: 0.4704928994, blue: 0.9946855903, alpha: 1)
+                errorLabel.textColor = AppConstants.theme
                 shouldEnableButton(shouldEnable: true)
             } else {
                 errorLabel.text = AppConstants.notEligibleToSignUpText
@@ -59,7 +63,7 @@ class SetRoleViewController: UIViewController {
                 shouldEnableButton(shouldEnable: false)
             } else {
                 errorLabel.text = AppConstants.eligibleToSignUpText
-                errorLabel.textColor = #colorLiteral(red: 0.7573277354, green: 0.4704928994, blue: 0.9946855903, alpha: 1)
+                errorLabel.textColor = AppConstants.theme
                 shouldEnableButton(shouldEnable: true)
             }
         }
@@ -68,14 +72,13 @@ class SetRoleViewController: UIViewController {
     private func shouldEnableButton(shouldEnable: Bool) {
         signUpButton.isEnabled = shouldEnable
         if shouldEnable {
-            signUpButton.backgroundColor = #colorLiteral(red: 0.7573277354, green: 0.4704928994, blue: 0.9946855903, alpha: 1)
+            signUpButton.backgroundColor = AppConstants.theme
         } else {
             signUpButton.backgroundColor = .lightGray
         }
     }
     
     @IBAction func signupButtonAction(_ sender: Any) {
-//        let defaults = UserDefaults.standard
         UserDefaults.standard.set(true, forKey: AppConstants.signUpCompletedKey)
         saveRole()
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
@@ -86,7 +89,6 @@ class SetRoleViewController: UIViewController {
     }
     
     func saveRole() {
-//        let defaults = UserDefaults.standard
         var role = ""
         if roleSegmentControl.selectedSegmentIndex == Segements.admin.rawValue {
             role = AppConstants.adminRoleText
@@ -95,7 +97,6 @@ class SetRoleViewController: UIViewController {
         }
         User.user.role = role
         saveUserData()
-//        defaults.set(role, forKey: AppConstants.roleKey)
     }
     
     private func saveUserData() {

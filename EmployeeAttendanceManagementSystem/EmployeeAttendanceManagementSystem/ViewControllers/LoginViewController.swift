@@ -16,12 +16,10 @@ class LoginViewController: UIViewController {
     
     let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
     var isSecureEntryEnabled = true
-    var users: [UserEntity]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        fetchUsers()
     }
     
     private func setupUI() {
@@ -31,7 +29,6 @@ class LoginViewController: UIViewController {
         idTextField.delegate = self
         passwordTextField.delegate = self
         passwordTextField.rightViewMode = UITextField.ViewMode.always
-        imageView.isUserInteractionEnabled = true
         if isSecureEntryEnabled {
             let image = UIImage(systemName: "eye.slash.fill")
             imageView.image = image
@@ -76,9 +73,8 @@ class LoginViewController: UIViewController {
     }
     
     private func saveToDefaults(id: String) {
-        let defaults = UserDefaults.standard
-        defaults.set(true, forKey: AppConstants.loggedInKey)
-        defaults.set(id, forKey: AppConstants.idKey)
+        UserDefaults.standard.set(true, forKey: AppConstants.loggedInKey)
+        UserDefaults.standard.set(id, forKey: AppConstants.idKey)
     }
     
     @IBAction func signUpButtonAction(_ sender: Any) {
@@ -124,14 +120,9 @@ extension LoginViewController: UITextFieldDelegate {
 }
 
 extension LoginViewController {
-    func fetchUsers() {
-        guard let users = DatabaseManager.sharedInstance.retrieveData(modelType: CoreDataModelType<UserEntity>.user) else { return }
-        self.users = users
-    }
-    
     private func didMatch(id: String, password: String) -> Bool {
         var didCredsMatch: Bool = false
-        for user in users {
+        for user in RegisteredUsers.registeredUsers {
             if user.employeeId == Int16(id) && user.password == password {
                 didCredsMatch = true
                 break
